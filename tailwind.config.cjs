@@ -10,8 +10,8 @@ module.exports = {
       display: ['Inter']
     },
     fontSize:{
-      sm: '14px'
-    }
+      sm: '14px',
+    },
   },
   plugins: [],
 }
