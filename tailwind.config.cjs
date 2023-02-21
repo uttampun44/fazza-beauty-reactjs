@@ -12,6 +12,9 @@ module.exports = {
     fontSize:{
       sm: '14px',
     },
+    boxShadow:{
+      'md': '2px 8px 10px 0px grey'
+    }
   },
   plugins: [],
 }

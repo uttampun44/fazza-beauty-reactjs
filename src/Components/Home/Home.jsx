@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import Header from '../Header/Header'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import Servicepage from '../servicepage/Servicepage';
+
 
 function Home() {
 
@@ -72,7 +74,7 @@ function Home() {
             </section>
             <section className='service bg-[#fff]'>
                   <div className='max-w[992px] mb-9 mt-9'>
-                              <div className='heading-service'>
+                              <div className='about-us'>
                                 <h2 className='text-center font-display leading-[29px] text-[#37517E] text-[29px] font-semibold normal'>Tentang Kami</h2>
                                  <hr className='mt-2 divide-x-2 border-2 border-[#47B2E4] border-solid w-[136px] ml-auto mr-auto'></hr>
                               </div>
@@ -134,23 +136,31 @@ function Home() {
                        </div>
 
                        <div className='max-w-[992px] mr-auto ml-auto'>
-                            <div className='flex'>
-                                <div>
+                            <div className='flex pb-20 gap-4'>
+                                <div className='bg-white px-5 py-5 pt-6 shadow-[2px_8px_10px_0px_grey]'>
                                     <img src='/src/assets/Images/bi_shop.png' className='w-[28px] h-[28px]'/>
-                                    <p className='font-display font-normal text-base text-[#37517E]'>Modern Bisnis</p>
+                                    <p className='font-display font-normal text-base text-[#37517E] leading-4 mt-2 mb-2'>Modern Bisnis</p>
+                                    <p className='font-display font-normal text-[10px] text-[#37517E] leading-4'>Memperkenalkan serta mengedukasi tentang apa itu bisnis era digital  </p>
                                 </div>
-                                <div>
+                                <div className='bg-white px-5 py-5 pt-6 shadow-[2px_8px_10px_0px_grey]'>
                                       <img src='/src/assets/Images/icomoon-free_lab.png'className='w-[28px] h-[28px]'/>
+                                      <p className='font-display font-normal text-base text-[#37517E] leading-4 mt-2 mb-2'>Modern Bisnis</p>
+                                    <p className='font-display font-normal text-[10px] text-[#37517E] leading-4'>Memperkenalkan serta mengedukasi tentang apa itu bisnis era digital  </p>
                                 </div>
-                                <div>
+                                <div className='bg-white px-5 py-5 pt-6 shadow-[2px_8px_10px_0px_grey]'>
                                     <img src='/src/assets/Images/cloud-done-outline-rounded.png' className='w-[28px] h-[28px]'/>
+                                    <p className='font-display font-normal text-base text-[#37517E] leading-4 mt-2 mb-2'>Modern Bisnis</p>
+                                    <p className='font-display font-normal text-[10px] text-[#37517E] leading-4'>Memperkenalkan serta mengedukasi tentang apa itu bisnis era digital  </p>
                                 </div>
-                                <div>
+                                <div className='bg-white px-5 py-5 pt-6 shadow-[2px_8px_10px_0px_grey]'>
                                     <img src='/src/assets/Images/ic_round-gpp-good.png' className='w-[28px] h-[28px]'/>
+                                    <p className='font-display font-normal text-base text-[#37517E] leading-4 mt-2 mb-2'>Modern Bisnis</p>
+                                    <p className='font-display font-normal text-[10px] text-[#37517E] leading-4'>Memperkenalkan serta mengedukasi tentang apa itu bisnis era digital  </p>
                                 </div>
                             </div>
                        </div>
             </section>
+            <Servicepage />
         </main>
     </div>
   )
