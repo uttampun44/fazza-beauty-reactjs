@@ -1,0 +1,10 @@
+.gallery{
+    max-width: 989px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 20vw 20vw 1fr;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 2vw;
+    margin-bottom: 4vw;
+}
