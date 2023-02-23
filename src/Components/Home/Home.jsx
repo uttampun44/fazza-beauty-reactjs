@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import Header from '../Header/Header'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import Servicepage from '../servicepage/Servicepage';
-
+import Frequentlyaskequestion from '../FAQ/Frequentlyaskequestion';
+import Footer from '../footer/Footer';
 
 function Home() {
 
@@ -161,6 +162,8 @@ function Home() {
                        </div>
             </section>
             <Servicepage />
+            <Frequentlyaskequestion />
+            <Footer />
         </main>
     </div>
   )

@@ -1,9 +1,9 @@
-import React from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import imagegallery from './imagegallery.module.css'
 
 function Servicepage() {
-
+     const[displayAccordin, setAccordin] = useState(false)
   return (
     <div>
           <section className='service-sections'>
@@ -110,30 +110,57 @@ function Servicepage() {
                                </div>
                          </div>
 
-                         <div className='card-plan mt-6 flex justify-center gap-6'>
+                         <div className='card-plan mt-6 flex justify-around gap-6'>
                               <div className='card-one pl-9 shadow-[2px_8px_10px_0px_grey] pt-20 pr-24'>
                                   <h7 className='font-display text-sm font-bold leading-5 text-[#37517E] pb-1'>Free Plan</h7><br></br>
                                   <span className='font-display text-[36px] leading-10 font-light'>$</span><span className='font-display text-[40px] font-bold leading-8 text-[#37517E]'>0</span>
                                   <p className='text-[#47B2E4] leading-4 text-sm font-display mt-1'>packet set</p>
-                                  <div className='plan-details'>
-
+                                  <div className='plan-details pt-7 pb-8'>
+                                          <ul>
+                                             <li className='flex items-center'><img src='/src/assets/Images/right icon.png' className='w-[1rem] h-[1rem]'/><span className='text-[#7D7C7C] font-display font-normal leading-3 text-[10px]'>Quam adipiscing vitae proin</span></li>
+                                             <li className='flex items-center'><img src='/src/assets/Images/right icon.png' className='w-[1rem] h-[1rem]'/><span className='text-[#7D7C7C] font-display font-normal leading-3 text-[10px]'>Nec feugiat nisl pretium</span></li>
+                                             <li className='flex items-center'><img src='/src/assets/Images/cross.png' className='w-[1rem] h-[1rem]'/><span className='text-[#7D7C7C] font-display font-normal leading-3 line-through text-[10px]'>Nec feugiat nisl pretium</span></li>
+                                             <li className='flex items-center'><img src='/src/assets/Images/cross.png' className='w-[1rem] h-[1rem]'/><span className='text-[#7D7C7C] font-display font-normal leading-3 line-through text-[10px]'>Pharetra massa massa ultricies</span></li>
+                                             <li className='flex items-center'><img src='/src/assets/Images/cross.png' className='w-[1rem] h-[1rem]'/><span className='text-[#7D7C7C] font-display font-normal leading-3 line-through text-[10px]'>Pharetra massa massa ultricies</span></li>
+                                          </ul>
+                                   </div>
+                                   <div className='button-mulai pb-20'>
+                                  <button className='bg-[#47B2E4] rounded-[57px] pb-2 pt-2 px-9 py-9 text-[#fff]'>Mulai</button>
                                   </div>
                               </div>
                               <div className='card-two pl-9 shadow-[2px_8px_10px_0px_grey] pt-20 pr-24'>
                                   <h7 className='font-display text-sm font-bold leading-5 text-[#37517E] pb-1'>Business Plan</h7><br></br>
                                   <span className='font-display text-[36px] leading-10 font-light'>$</span><span className='font-display text-[40px] font-bold leading-8 text-[#37517E]'>0</span>
                                   <p className='text-[#47B2E4] leading-4 text-sm font-display mt-1'>packet set</p>
-                                  <div className='plan-details'>
-
+                                  <div className='plan-details pt-7 pb-8'>
+                                          <ul>
+                                             <li className='flex items-center'><img src='/src/assets/Images/right icon.png' className='w-[1rem] h-[1rem]'/><span className='text-[#7D7C7C] font-display font-normal leading-3 text-[10px]'>Quam adipiscing vitae proin</span></li>
+                                             <li className='flex items-center'><img src='/src/assets/Images/right icon.png' className='w-[1rem] h-[1rem]'/><span className='text-[#7D7C7C] font-display font-normal leading-3 text-[10px]'>Nec feugiat nisl pretium</span></li>
+                                             <li className='flex items-center'><img src='/src/assets/Images/right icon.png' className='w-[1rem] h-[1rem]'/><span className='text-[#7D7C7C] font-display font-normal leading-3 text-[10px]'>Nec feugiat nisl pretium</span></li>
+                                             <li className='flex items-center'><img src='/src/assets/Images/right icon.png' className='w-[1rem] h-[1rem]'/><span className='text-[#7D7C7C] font-display font-normal leading-3 text-[10px]'>Pharetra massa massa ultricies</span></li>
+                                             <li className='flex items-center'><img src='/src/assets/Images/right icon.png' className='w-[1rem] h-[1rem]'/><span className='text-[#7D7C7C] font-display font-normal leading-3 text-[10px]'>Pharetra massa massa ultricies</span></li>
+                                          </ul>
+                                   </div>
+                                   <div className='button-mulai pb-20'>
+                                  <button className='bg-[#47B2E4] rounded-[57px] pb-2 pt-2 px-9 py-9 text-[#fff]'>Mulai</button>
                                   </div>
                               </div>
                               <div className='card-three pl-9 shadow-[2px_8px_10px_0px_grey] pt-20 pr-24'>
                                    <h7 className='font-display text-sm font-bold leading-5 text-[#37517E] pb-1'>Developer Plan</h7><br></br>
                                    <span className='font-display text-[36px] leading-10 font-light'>$</span><span className='font-display text-[40px] font-bold leading-8 text-[#37517E]'>0</span>
                                    <p className='text-[#47B2E4] leading-4 text-sm font-display mt-1'>packet set</p>
-                                   <div className='plan-details'>
-
+                                   <div className='plan-details pt-7 pb-8'>
+                                          <ul>
+                                             <li className='flex items-center'><img src='/src/assets/Images/right icon.png' className='w-[1rem] h-[1rem]'/><span className='text-[#7D7C7C] font-display font-normal leading-3 text-[10px]'>Quam adipiscing vitae proin</span></li>
+                                             <li className='flex items-center'><img src='/src/assets/Images/right icon.png' className='w-[1rem] h-[1rem]'/><span className='text-[#7D7C7C] font-display font-normal leading-3 text-[10px]'>Nec feugiat nisl pretium</span></li>
+                                             <li className='flex items-center'><img src='/src/assets/Images/right icon.png' className='w-[1rem] h-[1rem]'/><span className='text-[#7D7C7C] font-display font-normal leading-3 text-[10px]'>Nec feugiat nisl pretium</span></li>
+                                             <li className='flex items-center'><img src='/src/assets/Images/right icon.png' className='w-[1rem] h-[1rem]'/><span className='text-[#7D7C7C] font-display font-normal leading-3 text-[10px]'>Pharetra massa massa ultricies</span></li>
+                                             <li className='flex items-center'><img src='/src/assets/Images/right icon.png' className='w-[1rem] h-[1rem]'/><span className='text-[#7D7C7C] font-display font-normal leading-3 text-[10px]'>Pharetra massa massa ultricies</span></li>
+                                          </ul>
                                    </div>
+                                  <div className='button-mulai pb-20'>
+                                  <button className='bg-[#47B2E4] rounded-[57px] pb-2 pt-2 px-9 py-9 text-[#fff]'>Mulai</button>
+                                  </div>
                               </div>
                          </div>
                   </div>
