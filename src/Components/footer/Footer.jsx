@@ -28,24 +28,24 @@ function Footer() {
                           <Link to='/useful' className='text-[#37517E] font-display text-sm font-semibold leading-5'>Useful Links</Link>
                           <div>
                                 <ul>
-                                    <li className='flex items-center gap-3'><img src='/src/assets/Images/footer arrow.svg'/><p classname='font-display text-sm leading-4 font-normal text-[#7D7C7C]'>Beranda</p></li>
-                                    <li className='flex items-center gap-3'><img src='/src/assets/Images/footer arrow.svg'/><p classname='font-display text-sm leading-4 font-normal text-[#7D7C7C]'>Tentang Kami</p></li>
-                                    <li className='flex items-center gap-3'><img src='/src/assets/Images/footer arrow.svg'/><p classname='font-display text-sm leading-4 font-normal text-[#7D7C7C]'>Produk</p></li>
-                                    <li className='flex items-center gap-3'><img src='/src/assets/Images/footer arrow.svg'/><p classname='font-display text-sm leading-4 font-normal text-[#7D7C7C]'>Peluang Bisnis</p></li>
+                                    <li className='flex items-center gap-3 text-[#7D7C7C]'><img src='/src/assets/Images/footer arrow.svg'/><p classname='font-display text-sm leading-4 font-normal text-[#7D7C7C]'>Beranda</p></li>
+                                    <li className='flex items-center gap-3 text-[#7D7C7C]'><img src='/src/assets/Images/footer arrow.svg'/><p classname='font-display text-sm leading-4 font-normal text-[#7D7C7C]'>Tentang Kami</p></li>
+                                    <li className='flex items-center gap-3 text-[#7D7C7C]'><img src='/src/assets/Images/footer arrow.svg'/><p classname='font-display text-sm leading-4 font-normal text-[#7D7C7C]'>Produk</p></li>
+                                    <li className='flex items-center gap-3 text-[#7D7C7C]'><img src='/src/assets/Images/footer arrow.svg'/><p classname='font-display text-sm leading-4 font-normal text-[#7D7C7C]'>Peluang Bisnis</p></li>
                                 </ul>
                           </div>
                     </div>
                     <div>
                     <ul>
-                                    <li className='flex items-center gap-3'><img src='/src/assets/Images/footer arrow.svg'/>Beranda</li>
-                                    <li className='flex items-center gap-3'><img src='/src/assets/Images/footer arrow.svg'/>Tentang Kami</li>
-                                    <li className='flex items-center gap-3'><img src='/src/assets/Images/footer arrow.svg'/>Produk</li>
-                                    <li className='flex items-center gap-3'><img src='/src/assets/Images/footer arrow.svg'/>Peluang Bisnis</li>
+                                    <li className='flex items-center gap-3 text-[#7D7C7C]'><img src='/src/assets/Images/footer arrow.svg'/><p classname='font-display text-sm leading-4 font-normal text-[#7D7C7C]'>Beranda</p></li>
+                                    <li className='flex items-center gap-3 text-[#7D7C7C]'><img src='/src/assets/Images/footer arrow.svg'/>Tentang Kami</li>
+                                    <li className='flex items-center gap-3 text-[#7D7C7C]'><img src='/src/assets/Images/footer arrow.svg'/>Produk</li>
+                                    <li className='flex items-center gap-3 text-[#7D7C7C]'><img src='/src/assets/Images/footer arrow.svg'/>Peluang Bisnis</li>
                                 </ul>
                     </div>
                     <div>
-                         <h10>Jejaring Sosial Kami</h10>
-                         <p className='pr-4'>Tomorrow fermentum hate eu feugiat lide <br></br>par naso tierra videa magna derita valies</p>
+                         <h10 className='text-[#37517E] font-display text-sm font-semibold leading-5'>Jejaring Sosial Kami</h10>
+                         <p className='pr-4 text-[#7D7C7C]'>Tomorrow fermentum hate eu feugiat lide <br></br>par naso tierra videa magna derita valies</p>
                          <div className='social-media-logo flex items-center mt-5 gap-4'>
                           <img src='/src/assets/Images/twitter.png' className='w-[26px] h-[26px]'/>
                           <img src='/src/assets/Images/facebook.png' className='w-[26px] h-[26px]'/>
