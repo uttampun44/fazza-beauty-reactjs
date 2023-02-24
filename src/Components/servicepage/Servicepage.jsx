@@ -128,7 +128,7 @@ function Servicepage() {
                                   </div>
                               </div>
                               <div className='card-two pl-9 shadow-[2px_8px_10px_0px_grey] pt-20 pr-24'>
-                                  <h7 className='font-display text-sm font-bold leading-5 text-[#37517E] pb-1'>Business Plan</h7><br></br>
+                                  <h7 className='font-display text-sm font-bold leading-5 text-[#37517E] pb-1 uppercase'>Business Plan</h7><br></br>
                                   <span className='font-display text-[36px] leading-10 font-light'>$</span><span className='font-display text-[40px] font-bold leading-8 text-[#37517E]'>0</span>
                                   <p className='text-[#47B2E4] leading-4 text-sm font-display mt-1'>packet set</p>
                                   <div className='plan-details pt-7 pb-8'>

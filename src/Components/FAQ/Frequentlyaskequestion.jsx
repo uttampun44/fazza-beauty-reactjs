@@ -1,10 +1,26 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 function Frequentlyaskequestion() {
 
     const[displayAccordin, setAccordin] = useState(false)
+
+    const[formdetails, setDetails] = useState({
+      fullname: '',
+      email : "",
+      comment: "",
+      subject: "",
+});
+
+    const formsubmit = (e) =>{
+      e.preventDefault();
+    setDetails([e.target.name] = e.target.value)
+     alert(`form submit ${formdetails}`);
+     console.log(formdetails)
+   
+    }
+
     const faqdetail = [
         {
           image:'/src/assets/Images/question.png',
@@ -47,6 +63,10 @@ function Frequentlyaskequestion() {
             voluptatem.`
           }
       ]
+
+      const text = (e) =>{
+      console.log(e.target.value)
+      }
       console.log(faqdetail)
     
       const accordinfaq = () =>{
@@ -140,28 +160,28 @@ function Frequentlyaskequestion() {
                   </div>
                   <div className='form shadow-[2px_8px_10px_0px_grey]'>
                        <div className='grid px-9 py-9'>
-                            <form>
+                            <form method='POST'>
                                 <div className='flex items-center justify-center gap-4 mb-8'>
                                      <div className='firstname'>
                                          <label className='font-display text-[#7D7C7C] font-medium text-sm leading-4 pb-1'>Nama Kamu</label>
-                                           <input className='border-2 rounded'/>
+                                           <input className='border-2 rounded' name='firstname' onChange={text}/>
                                         </div>
                                       <div className='email'>
                                         <label className='font-display text-[#7D7C7C] font-medium text-sm leading-4 pb-1'>Email Kamu</label>
-                                           <input className='border-2 rounded'/>
+                                           <input className='border-2 rounded' name='email' onChange={text}/>
                                      </div>
                                 </div>
 
                                 <div className='Subject'>
                                  <label className='font-display text-[#7D7C7C] font-medium text-sm leading-4 pb-1'>Subjek</label>
-                                   <input className='border-2 rounded w-[100%] border-[1px solid #7D7C7C]'/>
+                                   <input className='border-2 rounded w-[100%] border-[1px solid #7D7C7C]' name='subject' onChange={text}/>
                                 </div>
                                 <div className='grid mt-8'>
                                 <label className='font-display text-[#7D7C7C] font-medium text-sm leading-4 pb-1'>Pesan</label>
-                                    <textarea className='border-2 rounded w-[100%] border-[1px solid #7D7C7C] pt-8 pb-8'></textarea>
+                                    <textarea className='border-2 rounded w-[100%] border-[1px solid #7D7C7C] pt-8 pb-8' name='comment' onChange={text}></textarea>
                                 </div>
                                <div className='flex justify-center mt-8 mb-12'>
-                               <button className='bg-[#47B2E4] rounded-full border-2 px-11 py-11 pt-3 pb-3 text-white font-display leading-4 font-normal'>Kirim Pesan</button>
+                               <button className='bg-[#47B2E4] rounded-full border-2 px-11 py-11 pt-3 pb-3 text-white font-display leading-4 font-normal' onClick={formsubmit} type='submit'>Kirim Pesan</button>
                                </div>
                             </form>
                        </div>
