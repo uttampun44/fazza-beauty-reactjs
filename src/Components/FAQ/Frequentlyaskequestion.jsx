@@ -160,6 +160,9 @@ function Frequentlyaskequestion() {
                                 <label className='font-display text-[#7D7C7C] font-medium text-sm leading-4 pb-1'>Pesan</label>
                                     <textarea className='border-2 rounded w-[100%] border-[1px solid #7D7C7C] pt-8 pb-8'></textarea>
                                 </div>
+                               <div className='flex justify-center mt-8 mb-12'>
+                               <button className='bg-[#47B2E4] rounded-full border-2 px-11 py-11 pt-3 pb-3 text-white font-display leading-4 font-normal'>Kirim Pesan</button>
+                               </div>
                             </form>
                        </div>
                   </div>

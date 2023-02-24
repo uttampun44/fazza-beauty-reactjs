@@ -1,9 +1,8 @@
-import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import imagegallery from './imagegallery.module.css'
 
 function Servicepage() {
-     const[displayAccordin, setAccordin] = useState(false)
+
   return (
     <div>
           <section className='service-sections'>
@@ -23,11 +22,11 @@ function Servicepage() {
 
                 <div className={imagegallery.gallery}>
                      <div className=''><img src='/src/assets/Images/shopping gallery.jpg' className='h-[100%] object-fill'/></div>
-                     <div className=''><img src='/src/assets/Images/shopping gallery one.jpg' className='h-[100%] object-fill'/></div>
-                     <div className=''><img src='/src/assets/Images/shopping gallery two.jpg' className='h-[100%] object-fill'/></div>
-                     <div className=''><img src='/src/assets/Images/shopping gallery three.jpg' className=' h-[100%] object-fill'/></div>
+                     <div className=''><img src='/src/assets/Images/shopping gallery one.jpg' className='h-[100%] object-fill w-[100%]'/></div>
+                     <div className=''><img src='/src/assets/Images/shopping gallery two.jpg' className='h-[100%] object-fill w-[100%]'/></div>
+                     <div className=''><img src='/src/assets/Images/shopping gallery three.jpg' className=' h-[100%] object-fill w-[100%]'/></div>
                      <div className=''><img src='/src/assets/Images/shopping gallery four.jpg'/></div>
-                     <div className=''><img src='/src/assets/Images/shopping gallery five.jpg' className='h-[100%] object-fill'/></div>
+                     <div className=''><img src='/src/assets/Images/shopping gallery five.jpg' className='h-[100%] object-fill w-[100%]'/></div>
                      <div className=''><img src='/src/assets/Images/shopping gallery six.jpg' className='h-[100%] object-fill'/></div>
                 </div>
           </section>
