@@ -1,45 +1,15 @@
 import React, { useState } from 'react'
 import Header from '../Header/Header'
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import Servicepage from '../servicepage/Servicepage';
 import Frequentlyaskequestion from '../FAQ/Frequentlyaskequestion';
 import Footer from '../footer/Footer';
+import Accordinitem from './Accordinitem';
+import Accor from './accor.js'
 
 function Home() {
 
-  const[displayAccordin, setAccordin] = useState(false)
-
-  const detail = [
-    {
-      id: 1,
-      title: "Apa sih Visi dari perusahaan kami?",
-      content: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis sapiente
-      laborum cupiditate possimus labore, hic temporibus velit dicta earum
-      suscipit commodi eum enim atque at? Et perspiciatis dolore iure
-      voluptatem.`
-    },
-    {
-      id:2, 
-      title: "Bagaimana degan misi kami?",
-      content: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis sapiente
-      laborum cupiditate possimus labore, hic temporibus velit dicta earum
-      suscipit commodi eum enim atque at? Et perspiciatis dolore iure
-      voluptatem.`
-    },
-    {  id: 3,
-      title: "Kenapa harus memilih kami?",
-      content: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis sapiente
-      laborum cupiditate possimus labore, hic temporibus velit dicta earum
-      suscipit commodi eum enim atque at? Et perspiciatis dolore iure
-      voluptatem.`
-    }
-  ]
-  console.log(detail)
-
-  const accordinservice = () =>{
-    console.log(`it's working`)
-    setAccordin(!displayAccordin)
-  }
+const [data, setData] = useState(Accor);
+console.log(data)
   return (
     <div>
         <Header/>
@@ -113,19 +83,8 @@ function Home() {
                              </div>
                              <div className='accordin-div'>
                                  {
-                                  detail.map((accor) =>{
-                                    return (
-                                      <div className='' key={accor.id}>
-                                       <div className='flex justify-between items-center bg-white mb-2 pl-4 pr-4 px-4 py-4'>
-                                           <span className='text-[#47B2E4]'>{accor.id}</span>
-                                           <p className='font-display font-semibold'>{accor.title}</p>
-                                           <button onClick={accordinservice}><KeyboardArrowDownIcon /></button>
-                                       </div>
-                                       <div style={{display : displayAccordin ? 'block' : 'none'}}>
-                                           <p className='pt-4 pb-4 font-display font-normal'>{accor.content}</p>
-                                        </div>
-                                      </div>
-                                    )
+                                  data.map((accor) =>{
+                                    return  <Accordinitem key={accor.id} {...accor}/>
                                   })
                                  }
                              </div>
