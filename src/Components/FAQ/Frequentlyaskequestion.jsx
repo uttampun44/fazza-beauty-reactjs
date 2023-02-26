@@ -1,11 +1,13 @@
 import { useEffect, useState } from 'react'
-import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import LocationOnIcon from '@mui/icons-material/LocationOn';
+import Faqaccordin from './Faqaccordin';
+import Faq from './Faq.js'
 
 function Frequentlyaskequestion() {
 
-    const[displayAccordin, setAccordin] = useState(false)
+    const[faq, setFaq] = useState(Faq)
+    console.log(faq)
 
+    console.log(faq)
     const[formdetails, setDetails] = useState({
       fullname: '',
       email : "",
@@ -20,59 +22,10 @@ function Frequentlyaskequestion() {
      console.log(formdetails)
    
     }
+const text = (e) =>{
+  console.log(e.target.value)
+}
 
-    const faqdetail = [
-        {
-          image:'/src/assets/Images/question.png',
-          title: "Apakah itu tidak akan diikuti oleh was for tapi tempat tidur guci dua?",
-          content: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis sapiente
-          laborum cupiditate possimus labore, hic temporibus velit dicta earum
-          suscipit commodi eum enim atque at? Et perspiciatis dolore iure
-          voluptatem.`
-        },
-        {
-          image:'/src/assets/Images/question.png',
-          title: "Apakah cokelat penyakit yang paling populer saat ini?",
-          content: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis sapiente
-          laborum cupiditate possimus labore, hic temporibus velit dicta earum
-          suscipit commodi eum enim atque at? Et perspiciatis dolore iure
-          voluptatem.`
-        },
-        { 
-          image:'/src/assets/Images/question.png',
-          title: "Apakah itu sakit di pantat?",
-          content: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis sapiente
-          laborum cupiditate possimus labore, hic temporibus velit dicta earum
-          suscipit commodi eum enim atque at? Et perspiciatis dolore iure
-          voluptatem.`
-        },
-        {
-            image:'/src/assets/Images/question.png', 
-            title: "Saatnya anak-anak makan salad dan salad?",
-            content: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis sapiente
-            laborum cupiditate possimus labore, hic temporibus velit dicta earum
-            suscipit commodi eum enim atque at? Et perspiciatis dolore iure
-            voluptatem.`
-          },
-          { 
-            image:'/src/assets/Images/question.png',
-            title: "Mahkota kehidupan murni menghiasi langit-langit mulut?",
-            content: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis sapiente
-            laborum cupiditate possimus labore, hic temporibus velit dicta earum
-            suscipit commodi eum enim atque at? Et perspiciatis dolore iure
-            voluptatem.`
-          }
-      ]
-
-      const text = (e) =>{
-      console.log(e.target.value)
-      }
-      console.log(faqdetail)
-    
-      const accordinfaq = () =>{
-        console.log(`it's working`)
-        setAccordin(!displayAccordin)
-      }
   return (
     <div>
         <section className='bg-[#F3F5FA] mt-9'>
@@ -90,24 +43,9 @@ function Frequentlyaskequestion() {
                   <div className='faq-accordin mt-6 pb-12'>
                   <div className='accordin-div'>
                                  {
-                                  faqdetail.map((accordin) =>{
-                                    return (
-                                      <div className='' key={accordin.id}>
-                                       <div className='flex justify-between items-center bg-white mb-2 pl-4 pr-4 px-4 py-4'>
-                                           <div className='flex'>
-                                           <img src={accordin.image} className='w-[1rem] mr-3'/>
-                                           <p className='font-display font-medium text-[#37517E] leading-4'>{accordin.title}</p>
-                                           </div>
-                                           <div>
-                                             <button onClick={accordinfaq}><KeyboardArrowDownIcon /></button>
-                                       </div>
-                                       </div>
-                                       <div style={{display : displayAccordin ? 'block' : 'none'}}>
-                                           <p className='pt-4 pb-4 font-display font-normal'>{accordin.content}</p>
-                                        </div>
-                                      </div>
-                                    )
-                                  })
+                                   faq.map((faqitems)=> {
+                                    return <Faqaccordin key={faqitems.id} {...faqitems}/>
+                                   })
                                  }
                              </div>
                   </div>
@@ -118,7 +56,7 @@ function Frequentlyaskequestion() {
             <div className='max-w-[983px] mr-auto ml-auto'>
                   <div className='contact-us-title-section flex flex-col items-center mb-9'>
                      <div className='contact-title mb-3'>
-                          <h9 className='text-center text-[#37517E] font-display font-bold leading-7 text-[1.6rem]'>kontak</h9>
+                          <h9 className='text-center text-[#37517E] font-display font-bold leading-7 text-[1.6rem] uppercase'>kontak</h9>
                           <hr className='mt-2 divide-x-2 border-2 border-[#47B2E4] border-solid w-[3vw] ml-auto mr-auto'></hr>
                      </div>
                      <div className='text-center'>
@@ -144,7 +82,7 @@ function Frequentlyaskequestion() {
                           <img src='/src/assets/Images/email.svg'/>
                          </div>
                       <div className='email-details'>
-                          <h9 className='font-display leading-5 text-[1rem] font-medium text-[#37517E] ml-1'>Email</h9>
+                          <h9 className='font-display leading-5 text-[1rem] font-medium text-[#37517E] ml-1 uppercase'>Email</h9>
                           <p className='font-display text-[10px] font-medium leading-3 text-[#6A94DD] ml-1'>fazzaskin.id@gmail.com</p>
                           </div>
                          </div>
@@ -153,7 +91,7 @@ function Frequentlyaskequestion() {
                                 <img src='/src/assets/Images/telephone.svg'/>
                             </div>
                             <div className='telephone-heading'>
-                                  <h9 className='font-display leading-5 text-[1rem] font-medium text-[#37517E] ml-1'>Telepon :</h9> 
+                                  <h9 className='font-display leading-5 text-[1rem] font-medium text-[#37517E] ml-1 uppercase'>Telepon :</h9> 
                                   <p className='font-display text-[10px] font-medium leading-3 text-[#6A94DD] ml-1'>+62 8132 3456 7890</p>
                             </div>
                       </div>
