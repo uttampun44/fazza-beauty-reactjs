@@ -11,7 +11,7 @@ function Accordinitem({id, title, content}) {
   
   return (
     <div>
-         <div className='flex justify-between bg-white px-4 py-2 mb-2'>
+         <div className='flex justify-between bg-white px-4 py-2 mb-2 rounded-md'>
              <span className='text-[#47B2E4] leading-4 text-sm font-normal'>{id}</span>
              <span className='font-display text-sm leading-4 font-medium'>{title}</span>
              <button onClick={showAccordin}><KeyboardArrowDownIcon /></button>
